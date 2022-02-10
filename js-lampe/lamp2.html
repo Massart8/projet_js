@@ -1,0 +1,33 @@
+<html>
+  
+<body>
+    <!-- onclick event is generated
+        and it calls turnOnOff function -->
+    <!-- OFFbulb.jpg is the turn off bulb image -->
+<img id="Image" onclick="turnOnOff()" 
+src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+  
+    <p>Click on the bulb to turn it ON and OFF</p>
+  
+    <script>
+     // implementation of turnOnOff function -->
+     function turnOnOff() 
+     // taking image in image variable
+     var image = document.getElementById('Image');
+  
+     //Match the image name
+     //whether it is ONbulb or OFFbulb
+     //change image to OFFbulb.jpg if
+     //it match with ONbulb otherwise
+     //change it to ONbulb.jpg -->
+     if (image.src.match("ONbulb"))
+         image.src = "https://media.geeksforgeeks.org/
+                     wp-content/uploads/OFFbulb.jpg";
+     else
+         image.src = "https://media.geeksforgeeks.org/
+                      wp-content/uploads/ONbulb.jpg";
+    }
+    </script>
+</body>
+  
+</html>
